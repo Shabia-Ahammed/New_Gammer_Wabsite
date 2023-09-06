@@ -1,0 +1,614 @@
+/* 
+    import google fonts (work sans weight 400, 500, 700, 800, 900
+*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
+
+/* 
+    Universal Styles for css
+*/
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    /* border: #0B0223 solid 2px; */
+}
+
+/* 
+    Navigation Styles Start from Here
+*/
+
+
+header {
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 30px;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.logo-image {
+    width: 86px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.logo-heading {
+    font-size: 45px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.logo span {
+    background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+nav {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+nav a,
+.follow,
+.navbar a {
+    text-decoration: none;
+    color: #3C354F;
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+nav .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+nav .social-media .youtube {
+    padding-left: 24px;
+    padding-right: 16px;
+}
+
+.social-media {
+    width: 262px;
+    height: 56px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+}
+
+/* 
+    Navigation Styles End 
+*/
+
+
+/* 
+    banner Styles Start from Here
+*/
+
+.banner-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.banner-info {
+    background-image: url("../images/Group14.png");
+    background-repeat: no-repeat;
+    fill: linear-gradient(235deg, rgba(140, 87, 238, 0.03) 3.9%, rgba(241, 68, 174, 0.03) 100.56%);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 900px;
+    background-position: center;
+    padding: 148px 0;
+}
+
+
+.banner-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.banner-image img {
+    max-height: 446px;
+}
+
+.banner-heading {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-goat {
+    font-size: 95px;
+    font-weight: 800;
+    text-transform: uppercase;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 24px;
+}
+
+.banner-list-group {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.banner-list {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.banner-list p {
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: lowercase;
+}
+
+.banner-btn,
+.know-more-btn,
+.positions-btn {
+    border: none;
+    outline: none;
+    padding: 21px 40px;
+    border-radius: 48px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FFF;
+    margin-top: 40px;
+}
+
+.banner-btn-container {
+    display: flex;
+    gap: 24px;
+}
+
+.signin-btn {
+    background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+}
+
+.rogue-btn {
+    background: #4EC5F7;
+}
+
+/* 
+    banner Styles End
+*/
+
+
+/* 
+    Gamer section Styles Start from Here
+*/
+
+
+#gamer-section {
+    padding: 96px 40px;
+    background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 13.13%, rgba(255, 66, 165, 0.03) 87.94%);
+
+}
+
+
+.gamer-container {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 52px;
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+
+.gamer-heading {
+    text-align: right;
+    font-size: 48px;
+    font-weight: 700;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 24px;
+}
+
+.gamer-description {
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.know-more-btn-container {
+    text-align: right;
+    padding-bottom: 24px;
+}
+
+.know-more-btn {
+    background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+
+}
+
+.gamer-purpose {
+    text-align: right;
+    line-height: 45px;
+    color: #534C64;
+}
+
+.gamer-purpose p {
+    font-size: 24px;
+    font-weight: 500;
+
+}
+
+.gamer-purpose h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* 
+    Gamer section Styles End
+*/
+
+
+
+/* 
+    online games section Styles Start from Here
+*/
+
+#online-games-section {
+    padding-top: 120px;
+}
+
+.online-games-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.online-games-info {
+    text-align: center;
+}
+
+.online-games-heading {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 16px;
+
+}
+
+.online-games-funny-videos {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 48px;
+}
+
+.online-games-description {
+    color: #534C64;
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 48px;
+
+}
+
+.card-image {
+    max-width: 342px;
+    max-height: 400px;
+    margin-bottom: 24px;
+    z-index: 50;
+}
+
+.card-description {
+    max-width: 342px;
+    color: #534C64;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    justify-content: center;
+    margin: auto 50px;
+}
+
+.playinstant-heading {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #0B0223;
+
+}
+
+
+/* 
+    online games section Styles End
+*/
+
+
+
+
+/* 
+    play instant section Styles Start from Here
+*/
+
+#playinstant-section {
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+
+.playinstant-heading-span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.playinstant-description {
+    max-width: 353px;
+    color: #534C64;
+    text-align: right;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: right;
+    padding-top: 24px;
+
+}
+
+
+.playinstant-description-2 {
+    max-width: 353px;
+    color: #534C64;
+    text-align: left;
+    font-size: 18px;
+    line-height: 30px;
+    padding-top: 24px;
+
+}
+
+.playinstant-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 265px;
+    margin-bottom: 195px;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.playinstant-images {
+    position: relative;
+}
+
+.playinstant-corner-image {
+    position: absolute;
+    bottom: -75px;
+    left: -145px;
+}
+
+.playinstant-corner-image-2 {
+    position: absolute;
+    bottom: -75px;
+    right: -145px;
+}
+
+
+/* 
+    play instant section Styles End
+*/
+
+
+
+/* 
+    careers section Styles Start from Here
+*/
+
+#careers-section {
+    background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.careers-container {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.careers-heading {
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    padding-bottom: 24px;
+}
+
+.careers-description {
+    color: #FFF;
+    font-size: 18px;
+    line-height: 30px;
+    padding-bottom: 32px;
+}
+
+.careers-list {
+    color: #FFF;
+    font-weight: 600;
+    line-height: 40px;
+    font-size: 20px;
+    display: flex;
+
+}
+
+.careers-left-list {
+    text-align: left;
+}
+
+.careers-right-list {
+    text-align: right;
+}
+
+
+.positions-btn {
+    color: #FF42A5;
+}
+
+.careers-image {
+    max-width: 813px;
+}
+
+/* 
+    careers section Styles End
+*/
+
+
+#games-section {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.games-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    gap: 55px;
+    margin: 120px 40px;
+}
+
+.games-box {
+    max-width: 243px;
+    max-height: 80px;
+    border-radius: 50px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 2px 2px 2px 1px rgba(223, 221, 221, 0.903);
+    transition: all  ease-in-out 1s;
+
+}
+
+.games-box:hover {
+    border: 1.5px solid #FF42A5;
+    background: linear-gradient(90deg, #FF42A5 13.13%, #FF42A5 87.94%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.games-box img {
+    width: 60px;
+    height: 60px;
+}
+
+.games-box p {
+    color: #0B0223;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+
+/* 
+    footer section styles start 
+*/
+.footer-logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo {
+    padding-bottom: 56px;
+    padding-top: 130px;
+    margin: 0 auto;
+}
+
+.logo a {
+    text-decoration: none;
+}
+
+footer {
+    background: #0B0223;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.footer-logo-heading {
+    color: #fff;
+
+}
+
+.footer-nav {
+    color: #fff;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    padding-bottom: 56px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-social-icon {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding-bottom: 74px;
+    justify-content: center;
+}
+
+.about-footer {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    gap: 60px;
+    padding-bottom: 28px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.copyright {
+    color: rgba(255, 255, 255, 0.60);
+    padding-bottom: 130px;
+    text-align: center;
+
+}

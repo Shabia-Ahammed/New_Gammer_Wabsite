@@ -1,0 +1,270 @@
+/* 
+    responsive for mobile large devices
+*/
+@media only screen and (max-width: 425px) {
+
+    /* 
+        navigation responsive styles 
+    */
+    .navbar {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .social-media {
+        margin-top: 62px;
+    }
+
+    /* 
+        banner responsive styles 
+    */
+
+    .banner-container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 24px;
+    }
+
+    .banner-image img {
+        max-width: 150px;
+    }
+
+    .banner-info {
+        padding: 20px;
+    }
+
+    .banner-btn {
+        padding: 5px 10px;
+    }
+
+    .banner-heading {
+        font-size: 40px;
+    }
+
+    .banner-goat {
+        font-size: 75px;
+    }
+
+
+    /* 
+        gamer section responsive styles 
+    */
+
+    .gamer-container {
+        flex-direction: column;
+    }
+
+    .gamer-image {
+        max-width: 400px;
+    }
+
+    .gamer-heading,
+    .gamer-purpose,
+    .gamer-description,
+    .know-more-btn-container {
+        text-align: center;
+    }
+
+    /* 
+        online games section responsive styles 
+    */
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* 
+        play instant section responsive styles 
+    */
+
+    .playinstant-container{
+        flex-direction: column;
+        gap: 85px;
+    }
+    .playinstant-img{
+        max-width: 250px;
+    }
+    .playinstant-corner-image, .playinstant-corner-image-2{
+        max-width: 150px;
+    }
+    .playinstant-corner-image{
+        bottom: -75px;
+        left: -65px;
+    }
+    .playinstant-corner-image-2{
+        bottom: -75px;
+        right: -65px;
+    }
+
+
+    .careers-container{
+        flex-direction: column;
+        padding: 30px;
+        font-size: 16px;
+    }
+    .careers-image img{
+        max-width: 313px;
+        padding-top: 20px;
+    }
+
+    .games-container{
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 25px;
+       margin: 120px 10px;
+    }
+    .games-box {
+        max-width: 143px;
+    
+    }
+    .games-box img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .games-box p {
+        font-size: 10px;
+    
+    }
+}
+
+
+
+/* 
+    responsive for tablet devices
+*/
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    /* 
+        navigation responsive styles 
+    */
+
+    .navbar {
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    /* 
+        banner responsive styles 
+    */
+
+
+    .banner-container {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 24px;
+    }
+
+    .banner-image img {
+        max-width: 400px;
+    }
+
+    .banner-info {
+        padding: 30px;
+    }
+
+    .banner-btn {
+        padding: 21px 40px;
+    }
+
+    .banner-heading {
+        font-size: 48px;
+    }
+
+    .banner-goat {
+        font-size: 95px;
+    }
+
+    /* 
+        gamer section styles
+    */
+    .gamer-container {
+        flex-direction: column;
+    }
+
+    .gamer-image {
+        max-width: 500px;
+    }
+
+    .gamer-heading,
+    .gamer-purpose,
+    .gamer-description,
+    .know-more-btn-container {
+        text-align: center;
+    }
+
+     /* 
+        online games section responsive styles 
+    */
+    .card-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .playinstant-container{
+        flex-direction: column;
+        gap: 85px;
+    }
+
+    .playinstant-img{
+        max-width: 450px;
+    }
+    .playinstant-corner-image, .playinstant-corner-image-2{
+        max-width: 350px;
+    }
+    .playinstant-corner-image{
+        bottom: -75px;
+        left: -65px;
+    }
+    .playinstant-corner-image-2{
+        bottom: -75px;
+        right: -65px;
+    }
+
+    .careers-container{
+        flex-direction: column;
+        padding: 30px;
+    }
+    .careers-image img{
+        max-width: 513px;
+        padding-top: 20px;
+    }
+    .games-container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .games-box {
+        max-width: 143px;
+    
+    }
+    .games-box img {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .games-box p {
+        font-size: 10px;
+    
+    }
+}
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1440px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .careers-image img{
+        max-width: 613px;
+    }
+    .playinstant-img{
+        max-width: 350px;
+    }
+    .playinstant-corner-image, .playinstant-corner-image-2{
+        max-width: 250px;
+    }
+}

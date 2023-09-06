@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamer</title>
+
+    <!-- Link Favicon -->
+    <link rel="shortcut icon" href="./images/Frame.png" type="image/x-icon" />
+
+    <!-- Link to the css style file -->
+    <link rel="stylesheet" href="./styles/style.css" />
+
+    <!-- Link to the css responsive style file -->
+    <link rel="stylesheet" href="./styles/responsive.css" />
+
+    <!-- Fontawesome icon kit -->
+    <script
+      src="https://kit.fontawesome.com/82d256375f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Navigation Bar Start from here -->
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="#banner">
+            <img
+              class="logo-image"
+              src="./images/Frame.png"
+              alt="gamer zone logo"
+            />
+          </a>
+          <a href="#banner">
+            <h3 class="logo-heading"><span>G</span>ammer</h3>
+          </a>
+        </div>
+        <nav>
+          <a href="#">
+            <p>About Us</p>
+          </a>
+          <a href="#">
+            <p>Developers</p>
+          </a>
+          <div class="social-media">
+            <p class="follow">Follow Us On</p>
+            <!-- <a class="youtube" href="#"><i class="fa-brands fa-youtube"></i></a> -->
+            <a class="youtube" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="34"
+                height="24"
+                viewBox="0 0 34 24"
+                fill="none"
+              >
+                <path
+                  d="M26.8723 0H7.04397C3.15369 0 0 3.15369 0 7.04397V16.956C0 20.8463 3.15369 24 7.04397 24H26.8723C30.7626 24 33.9163 20.8463 33.9163 16.956V7.04397C33.9163 3.15369 30.7626 0 26.8723 0ZM22.1085 12.4823L12.8341 16.9056C12.587 17.0234 12.3016 16.8432 12.3016 16.5695V7.4464C12.3016 7.16875 12.5945 6.98879 12.8422 7.11431L22.1165 11.8141C22.3923 11.9538 22.3875 12.3492 22.1085 12.4823Z"
+                  fill="#F61C0D"
+                />
+              </svg>
+            </a>
+            <!-- <a class="tiktok" href="#"><i class="fa-brands fa-tiktok"></i></a> -->
+            <a class="tiktok" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="24"
+                viewBox="0 0 25 24"
+                fill="none"
+              >
+                <path
+                  d="M9.45219 12.4407C7.54906 12.4407 6.01156 13.9782 6.03969 15.8626C6.05844 17.072 6.72406 18.122 7.70375 18.7079C7.37094 18.197 7.17406 17.5923 7.16469 16.9407C7.13656 15.0563 8.67406 13.5188 10.5772 13.5188C10.9522 13.5188 11.3131 13.5798 11.6506 13.6876V9.91416C11.2991 9.8626 10.9381 9.83447 10.5772 9.83447C10.5584 9.83447 10.5444 9.83447 10.5256 9.83447V12.6095C10.1881 12.5017 9.82719 12.4407 9.45219 12.4407Z"
+                  fill="#F00044"
+                />
+                <path
+                  d="M17.6787 1.125H17.6506H16.6756C16.9568 2.53594 17.749 3.76406 18.8553 4.59844C18.1287 3.6375 17.6881 2.4375 17.6787 1.125Z"
+                  fill="#F00044"
+                />
+                <path
+                  d="M23.4162 6.86729C23.0459 6.86729 22.6897 6.82979 22.3381 6.76416V9.46885C21.0631 9.46885 19.8256 9.22041 18.6631 8.72354C17.9131 8.40479 17.2147 7.99697 16.5725 7.50479L16.5912 15.8438C16.5819 17.7188 15.8412 19.4767 14.5006 20.8032C13.4084 21.8813 12.0256 22.5704 10.5256 22.7907C10.174 22.8423 9.81311 22.8704 9.45217 22.8704C7.84905 22.8704 6.32092 22.3501 5.07874 21.3892C5.21936 21.5579 5.36936 21.722 5.53342 21.8813C6.88342 23.2126 8.67405 23.9485 10.5819 23.9485C10.9428 23.9485 11.3037 23.9204 11.6553 23.8688C13.1553 23.6485 14.5381 22.9595 15.6303 21.8813C16.9709 20.5548 17.7115 18.797 17.7209 16.922L17.6506 8.58291C18.2881 9.0751 18.9865 9.4876 19.7412 9.80166C20.9084 10.2938 22.1459 10.547 23.4162 10.547"
+                  fill="#F00044"
+                />
+                <path
+                  d="M5.51938 11.911C6.85532 10.5845 8.63188 9.84854 10.5256 9.83447V8.83604C10.1741 8.78447 9.81313 8.75635 9.45219 8.75635C7.53969 8.75635 5.74438 9.49229 4.39438 10.8329C3.06782 12.1501 2.30844 13.9501 2.31313 15.8204C2.31313 17.7048 3.05844 19.472 4.40376 20.8079C4.61938 21.0188 4.83969 21.2157 5.07407 21.3938C4.01469 20.1329 3.43813 18.5579 3.43344 16.8985C3.43813 15.0282 4.19282 13.2282 5.51938 11.911Z"
+                  fill="#08FFF9"
+                />
+                <path
+                  d="M22.3381 6.76401V5.76089H22.3287C21.0256 5.76089 19.8256 5.32964 18.86 4.59839C19.699 5.70464 20.9272 6.49214 22.3381 6.76401Z"
+                  fill="#08FFF9"
+                />
+                <path
+                  d="M10.385 20.2594C10.8303 20.2828 11.2569 20.2219 11.6506 20.0953C13.01 19.65 13.9897 18.3844 13.9897 16.8937L13.9944 11.3156V1.125H16.6756C16.6053 0.773438 16.5678 0.417188 16.5631 0.046875H12.8694V10.2328L12.8647 15.8109C12.8647 17.3016 11.885 18.5672 10.5256 19.0125C10.1319 19.1438 9.7053 19.2047 9.25999 19.1766C8.6928 19.1438 8.16311 18.975 7.70374 18.7031C8.2803 19.5938 9.26467 20.1984 10.385 20.2594Z"
+                  fill="#08FFF9"
+                />
+                <path
+                  d="M10.5256 22.7906C12.0256 22.5703 13.4084 21.8812 14.5006 20.8031C15.8413 19.4766 16.5819 17.7188 16.5913 15.8438L16.5725 7.50469C17.21 7.99688 17.9084 8.40938 18.6631 8.72344C19.8303 9.21563 21.0678 9.46875 22.3381 9.46875V6.76406C20.9272 6.49219 19.6991 5.70469 18.86 4.59844C17.7538 3.76406 16.9569 2.53594 16.6803 1.125H13.9944V11.3109L13.9897 16.8891C13.9897 18.3797 13.01 19.6453 11.6506 20.0906C11.2569 20.2219 10.8303 20.2828 10.385 20.2547C9.26001 20.1938 8.28032 19.5891 7.70376 18.7031C6.72407 18.1219 6.05844 17.0672 6.03969 15.8578C6.01157 13.9734 7.54907 12.4359 9.45219 12.4359C9.82719 12.4359 10.1881 12.4969 10.5256 12.6047V9.82969C8.63188 9.84375 6.85532 10.5797 5.51938 11.9062C4.19282 13.2234 3.43344 15.0234 3.43813 16.8891C3.43813 18.5484 4.01469 20.1234 5.07876 21.3844C6.32563 22.3453 7.84907 22.8656 9.45219 22.8656C9.81313 22.8703 10.1741 22.8422 10.5256 22.7906Z"
+                  fill="black"
+                />
+              </svg>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="banner">
+        <div class="banner-container">
+          <div class="banner-info">
+            <div class="banner-info-container">
+              <h4 class="banner-heading">Play Like The</h4>
+              <p class="banner-goat">G.O.A.T.</p>
+              <div class="banner-list-group">
+                <div class="banner-list">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M21 12C21 13.1819 20.7672 14.3522 20.3149 15.4442C19.8626 16.5361 19.1997 17.5282 18.364 18.364C17.5282 19.1997 16.5361 19.8626 15.4442 20.3149C14.3522 20.7672 13.1819 21 12 21C10.8181 21 9.64778 20.7672 8.55585 20.3149C7.46392 19.8626 6.47177 19.1997 5.63604 18.364C4.80031 17.5282 4.13738 16.5361 3.68508 15.4442C3.23279 14.3522 3 13.1819 3 12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12Z"
+                      stroke="#0B0223"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M15.91 11.672C15.9686 11.7044 16.0174 11.752 16.0513 11.8097C16.0853 11.8673 16.1032 11.9331 16.1032 12C16.1032 12.0669 16.0853 12.1327 16.0513 12.1903C16.0174 12.248 15.9686 12.2955 15.91 12.328L10.307 15.441C10.2499 15.4727 10.1855 15.4889 10.1202 15.4881C10.0549 15.4873 9.99099 15.4694 9.93472 15.4363C9.87845 15.4031 9.8318 15.3559 9.79941 15.2992C9.76701 15.2425 9.74998 15.1783 9.75 15.113V8.887C9.75 8.601 10.057 8.421 10.307 8.56L15.91 11.672Z"
+                      fill="url(#paint0_linear_61_274)"
+                      stroke="url(#paint1_linear_61_274)"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_61_274"
+                        x1="10.5844"
+                        y1="11.9992"
+                        x2="15.3371"
+                        y2="11.9992"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#FF42A5" />
+                        <stop offset="1" stop-color="#FF42A5" />
+                      </linearGradient>
+                      <linearGradient
+                        id="paint1_linear_61_274"
+                        x1="10.5844"
+                        y1="11.9992"
+                        x2="15.3371"
+                        y2="11.9992"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#FF42A5" />
+                        <stop offset="1" stop-color="#FF42A5" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <p>1-Click instant play</p>
+                </div>
+                <div class="banner-list">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M3 16.5V18.75C3 19.3467 3.23705 19.919 3.65901 20.341C4.08097 20.7629 4.65326 21 5.25 21H18.75C19.3467 21 19.919 20.7629 20.341 20.341C20.7629 19.919 21 19.3467 21 18.75V16.5M16.5 12L12 16.5M12 16.5L7.5 12M12 16.5V3"
+                      stroke="url(#paint0_linear_61_286)"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_61_286"
+                        x1="5.36416"
+                        y1="11.9976"
+                        x2="18.8295"
+                        y2="11.9976"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#FF42A5" />
+                        <stop offset="1" stop-color="#FF42A5" />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                  <p>No Download</p>
+                </div>
+                <div class="banner-list">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M15 19.128C15.853 19.3757 16.7368 19.5009 17.625 19.5C19.0534 19.5021 20.4633 19.1764 21.746 18.548C21.7839 17.6517 21.5286 16.7675 21.0188 16.0293C20.509 15.2912 19.7724 14.7394 18.9207 14.4575C18.0691 14.1757 17.1487 14.1791 16.2992 14.4674C15.4497 14.7557 14.7173 15.313 14.213 16.055M15 19.128V19.125C15 18.012 14.714 16.965 14.213 16.055M15 19.128V19.234C13.0755 20.3931 10.8706 21.0038 8.62402 21C6.29302 21 4.11202 20.355 2.25002 19.234L2.24902 19.125C2.24826 17.7095 2.71864 16.3339 3.58601 15.2153C4.45338 14.0966 5.6684 13.2984 7.03951 12.9466C8.41063 12.5948 9.85985 12.7093 11.1587 13.2721C12.4575 13.8349 13.5321 14.814 14.213 16.055M12 6.375C12 7.27011 11.6444 8.12855 11.0115 8.76149C10.3786 9.39442 9.52013 9.75 8.62502 9.75C7.72992 9.75 6.87147 9.39442 6.23854 8.76149C5.6056 8.12855 5.25002 7.27011 5.25002 6.375C5.25002 5.47989 5.6056 4.62145 6.23854 3.98851C6.87147 3.35558 7.72992 3 8.62502 3C9.52013 3 10.3786 3.35558 11.0115 3.98851C11.6444 4.62145 12 5.47989 12 6.375ZM20.25 8.625C20.25 9.32119 19.9735 9.98887 19.4812 10.4812C18.9889 10.9734 18.3212 11.25 17.625 11.25C16.9288 11.25 16.2612 10.9734 15.7689 10.4812C15.2766 9.98887 15 9.32119 15 8.625C15 7.92881 15.2766 7.26113 15.7689 6.76884C16.2612 6.27656 16.9288 6 17.625 6C18.3212 6 18.9889 6.27656 19.4812 6.76884C19.9735 7.26113 20.25 7.92881 20.25 8.625Z"
+                      stroke="#0B0223"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <p>1000s of supported online games</p>
+                </div>
+              </div>
+              <div class="banner-btn-container">
+                <button class="banner-btn signin-btn">Sign In</button>
+                <button class="banner-btn rogue-btn">Go Rogue</button>
+              </div>
+            </div>
+          </div>
+          <div class="banner-image">
+            <img src="./images/Group18.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="gamer-section">
+        <div class="gamer-container">
+          <div>
+            <img class="gamer-image" src="./images/pngwing4.png" alt="gamers" />
+          </div>
+          <div>
+            <h3 class="gamer-heading">We are gamer</h3>
+            <p class="gamer-description">
+              An international digital games and entertainment company. We
+              develop, publish and distribute multiplayer mobile games. We reach
+              over 400 million players each month and our audience keeps
+              growing.
+            </p>
+            <div class="know-more-btn-container">
+              <button class="know-more-btn">know more</button>
+            </div>
+            <div class="gamer-purpose">
+              <p>Our purpose...</p>
+              <h2>“unleash the gamer in everyone”</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="online-games-section">
+        <div class="online-games-container">
+          <div class="online-games-info">
+            <h3 class="online-games-heading">
+              Online Games
+              <span class="online-games-funny-videos">Funny Videos</span>
+            </h3>
+            <p class="online-games-description">
+              A Collection of Hilarious Videos to Brighten Your Day
+            </p>
+          </div>
+          <div class="card-container">
+            <div class="card">
+              <img
+                class="card-image"
+                src="./images/Rectangle4.png"
+                alt="vortex game"
+              />
+              <p class="card-description">
+                No Download. No Installs. Play games Instantly on Gamer.
+              </p>
+            </div>
+            <div class="card">
+              <img class="card-image" src="./images/Rectangle5.png" alt="" />
+              <p class="card-description">
+                Did you score? #unblockedgames #school
+              </p>
+            </div>
+            <div class="card">
+              <img class="card-image" src="./images/Rectangle6.png" alt="" />
+              <p class="card-description">Breaking game records like OG</p>
+            </div>
+            <div class="card">
+              <img class="card-image" src="./images/Rectangle7.png" alt="" />
+              <p class="card-description">
+                Busted gaming on school laptop, but you are still lit.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="playinstant-section">
+        <div class="playinstant-container">
+          <div>
+            <h3 class="playinstant-heading">
+              <span class="playinstant-heading-span"> Play Instantly,</span>
+              <br />
+              No Downloads <br />
+              No Installs.
+            </h3>
+            <p class="playinstant-description">
+              Play games online for free without downloading. Just click the
+              Play button and play instantly in your browser.
+            </p>
+          </div>
+          <div class="playinstant-images">
+            <img
+              class="playinstant-img"
+              src="./images/Rectangle55.png"
+              alt=""
+            />
+            <img
+              class="playinstant-corner-image"
+              src="./images/Rectangle66.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="playinstant-container">
+          <div class="playinstant-images">
+            <img
+              class="playinstant-img"
+              src="./images/Rectangle67.png"
+              alt=""
+            />
+            <img
+              class="playinstant-corner-image-2"
+              src="./images/Rectangle78.png"
+              alt=""
+            />
+          </div>
+          <div>
+            <h3 class="playinstant-heading">
+              <span class="playinstant-heading-span"> Play Games Online</span>
+              <br />
+              Anywhere, <br />
+              Anytime!
+            </h3>
+            <p class="playinstant-description-2">
+              PC. dad’s phone, mom’s tablet, or your Chromebook, with Gamer you
+              can play your favorite games online for free, any time, anywhere ,
+              on any device.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="careers-section">
+        <div class="careers-container">
+          <div class="careers-info">
+            <div class="careers-info-container">
+              <h4 class="careers-heading">Careers</h4>
+              <p class="careers-description">
+                Gamer is driven to create the best and most fun games for our
+                millions of players all around the world, and we,re always on
+                the lookout for more top talent to join our growing team. If
+                you,d like to help us make great games and be a part of Gamers
+                bright future, we,d love to hear from you.
+              </p>
+            </div>
+            <div class="careers-list">
+              <div class="careers-left-list">
+                <p>Multimedia Artist +</p>
+                <p>Data Engineer +</p>
+                <p>Adroid Engineer +</p>
+                <p>Server Developer +</p>
+                <p>Group Financial Accountant +</p>
+                <p>Senior User Acuisition Specialist +</p>
+              </div>
+              <div class="careers-right-list">
+                <p>Lisbon, Portugal</p>
+                <p>Lisbon, Portugal</p>
+                <p>Zoetermeer, Netherlands</p>
+                <p>Lisbon, Portugal</p>
+                <p>London, United Kingdom</p>
+                <p>Lisbon, Portugal</p>
+              </div>
+            </div>
+            <div>
+              <button class="positions-btn">See all positions</button>
+            </div>
+          </div>
+          <div class="careers-image">
+            <img src="./images/Group65.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <section id="games-section">
+        <div class="games-container">
+          <div class="games-box">
+            <img src="./images/Rectangle11.png" alt="" />
+            <p>Action Games</p>
+          </div>
+          <div class="games-box">
+            <img src="./images/Rectangle12.png" alt="" />
+            <p>Adventure Games</p>
+          </div>
+          <div class="games-box">
+            <img src="./images/Rectangle13.png" alt="" />
+            <p>Arcade Games</p>
+          </div>
+          <div class="games-box">
+            <img src="./images/Rectangle14.png" alt="" />
+            <p>Educational Games</p>
+          </div>
+          <div class="games-box">
+            <img src="./images/Rectangle15.png" alt="" />
+            <p>Word Games</p>
+          </div>
+          <div class="games-box">
+            <img src="./images/Rectangle16.png" alt="" />
+            <p>Role Palying Games</p>
+          </div>
+          <div class="games-box">
+            <img src="./images/Rectangle17.png" alt="" />
+            <p>Music & Audio Games</p>
+          </div>
+          <div class="games-box">
+            <img src="./images/Rectangle18.png" alt="" />
+            <p>Puzzle Games</p>
+          </div>
+          <div class="games-box">
+            <img src="./images/Rectangle19.png" alt="" />
+            <p>Strategy Games</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo-container">
+          <div class="logo footer-logo">
+            <a href="#banner">
+              <img
+                class="logo-image"
+                src="./images/Frame.png"
+                alt="gamer zone logo"
+              />
+            </a>
+            <a href="#banner">
+              <h3 class="logo-heading footer-logo-heading">
+                <span>G</span>ammer
+              </h3>
+            </a>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <p>Our Story</p>
+          <p>Games</p>
+          <p>Web Games</p>
+          <p>Careers</p>
+          <p>Support</p>
+          <p>My Account</p>
+        </div>
+
+        <div class="footer-social-icon">
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="41"
+              viewBox="0 0 40 41"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_65_520)">
+                <path
+                  d="M40 8.431C38.5125 9.0835 36.9275 9.516 35.275 9.726C36.975 8.711 38.2725 7.116 38.8825 5.1935C37.2975 6.1385 35.5475 6.806 33.6825 7.1785C32.1775 5.576 30.0325 4.5835 27.6925 4.5835C23.1525 4.5835 19.4975 8.2685 19.4975 12.786C19.4975 13.436 19.5525 14.061 19.6875 14.656C12.87 14.3235 6.8375 11.056 2.785 6.0785C2.0775 7.306 1.6625 8.711 1.6625 10.2235C1.6625 13.0635 3.125 15.581 5.305 17.0385C3.9875 17.0135 2.695 16.631 1.6 16.0285C1.6 16.0535 1.6 16.086 1.6 16.1185C1.6 20.1035 4.4425 23.4135 8.17 24.176C7.5025 24.3585 6.775 24.446 6.02 24.446C5.495 24.446 4.965 24.416 4.4675 24.306C5.53 27.5535 8.545 29.941 12.13 30.0185C9.34 32.201 5.7975 33.516 1.9625 33.516C1.29 33.516 0.645 33.486 0 33.4035C3.6325 35.746 7.9375 37.0835 12.58 37.0835C27.67 37.0835 35.92 24.5835 35.92 13.7485C35.92 13.386 35.9075 13.036 35.89 12.6885C37.5175 11.5335 38.885 10.091 40 8.431Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_65_520">
+                  <rect
+                    width="40"
+                    height="40"
+                    fill="white"
+                    transform="translate(0 0.833496)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </p>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="41"
+              viewBox="0 0 40 41"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_65_522)">
+                <path
+                  d="M40 20.8335C40 30.8163 32.6859 39.0905 23.125 40.5905V26.6147H27.7852L28.6719 20.8335H23.125V17.0819C23.125 15.4999 23.9 13.9585 26.3844 13.9585H28.9062V9.03662C28.9062 9.03662 26.6172 8.646 24.4289 8.646C19.8609 8.646 16.875 11.4147 16.875 16.4272V20.8335H11.7969V26.6147H16.875V40.5905C7.31406 39.0905 0 30.8163 0 20.8335C0 9.78818 8.95469 0.833496 20 0.833496C31.0453 0.833496 40 9.78818 40 20.8335Z"
+                  fill="white"
+                />
+                <path
+                  d="M27.7852 26.6147L28.6719 20.8335H23.125V17.0819C23.125 15.5002 23.8998 13.9585 26.3843 13.9585H28.9062V9.03662C28.9062 9.03662 26.6175 8.646 24.4293 8.646C19.8609 8.646 16.875 11.4147 16.875 16.4272V20.8335H11.7969V26.6147H16.875V40.5905C17.8933 40.7502 18.9369 40.8335 20 40.8335C21.0631 40.8335 22.1067 40.7502 23.125 40.5905V26.6147H27.7852Z"
+                  fill="#1877F2"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_65_522">
+                  <rect
+                    width="40"
+                    height="40"
+                    fill="white"
+                    transform="translate(0 0.833496)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </p>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="58"
+              height="41"
+              viewBox="0 0 58 41"
+              fill="none"
+            >
+              <path
+                d="M55.9526 7.09249C55.294 4.64512 53.3644 2.71599 50.9175 2.05696C46.4468 0.833496 28.5643 0.833496 28.5643 0.833496C28.5643 0.833496 10.6821 0.833496 6.21148 2.01033C3.81162 2.66891 1.83498 4.64555 1.17639 7.09249C0 11.5627 0 20.8335 0 20.8335C0 20.8335 0 30.1509 1.17639 34.5745C1.83542 37.0214 3.76455 38.951 6.21192 39.61C10.7292 40.8335 28.5647 40.8335 28.5647 40.8335C28.5647 40.8335 46.4468 40.8335 50.9175 39.6567C53.3649 38.9981 55.294 37.0685 55.953 34.6216C57.1294 30.1509 57.1294 20.8806 57.1294 20.8806C57.1294 20.8806 57.1765 11.5627 55.9526 7.09249Z"
+                fill="white"
+              />
+              <path
+                d="M22.8706 29.3982L37.7409 20.8335L22.8706 12.2688V29.3982Z"
+                fill="#FF0000"
+              />
+            </svg>
+          </p>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="41"
+              viewBox="0 0 41 41"
+              fill="none"
+            >
+              <path
+                d="M36.1216 36.8336V36.8324H36.1296V25.0964C36.1296 19.3552 34.8936 14.9324 28.1816 14.9324C24.9548 14.9324 22.7896 16.7032 21.9056 18.3816H21.8124V15.4684H15.4484V36.8324H22.0752V26.2536C22.0752 23.4684 22.6032 20.7748 26.0524 20.7748C29.4512 20.7748 29.5016 23.9536 29.5016 26.432V36.8336H36.1216Z"
+                fill="white"
+              />
+              <path
+                d="M4.65761 15.4695H11.2924V36.8335H4.65761V15.4695Z"
+                fill="white"
+              />
+              <path
+                d="M7.97241 4.8335C5.85081 4.8335 4.12961 6.5547 4.12961 8.6763C4.12961 10.7979 5.85081 12.5551 7.97241 12.5551C10.094 12.5551 11.8152 10.7979 11.8152 8.6763C11.8136 6.5547 10.0924 4.8335 7.97241 4.8335Z"
+                fill="white"
+              />
+            </svg>
+          </p>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="41"
+              viewBox="0 0 41 41"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_65_551)">
+                <path
+                  d="M40.0905 12.5936C39.9968 10.4683 39.6531 9.00709 39.1607 7.74097C38.6528 6.39702 37.8714 5.19378 36.8477 4.19353C35.8474 3.1777 34.6362 2.38837 33.3078 1.88839C32.0344 1.39604 30.5809 1.05235 28.4555 0.958643C26.3143 0.856999 25.6345 0.833496 20.2038 0.833496C14.773 0.833496 14.0933 0.856999 11.96 0.950706C9.83463 1.04441 8.37347 1.38841 7.10766 1.88045C5.7634 2.38837 4.56016 3.16977 3.55991 4.19353C2.54408 5.19378 1.75505 6.40496 1.25477 7.73334C0.762424 9.00709 0.418729 10.4603 0.325021 12.5857C0.223378 14.7269 0.199875 15.4067 0.199875 20.8374C0.199875 26.2682 0.223378 26.9479 0.317085 29.0812C0.410793 31.2066 0.754793 32.6677 1.24714 33.9338C1.75505 35.2778 2.54408 36.481 3.55991 37.4813C4.56016 38.4971 5.77134 39.2864 7.09972 39.7864C8.37347 40.2788 9.82669 40.6225 11.9524 40.7162C14.0853 40.8102 14.7654 40.8334 20.1962 40.8334C25.6269 40.8334 26.3067 40.8102 28.44 40.7162C30.5653 40.6225 32.0265 40.2788 33.2923 39.7864C35.9805 38.7471 38.1058 36.6217 39.1452 33.9338C39.6372 32.6601 39.9812 31.2066 40.0749 29.0812C40.1686 26.9479 40.1921 26.2682 40.1921 20.8374C40.1921 15.4067 40.1842 14.7269 40.0905 12.5936ZM36.4884 28.9249C36.4023 30.8784 36.0742 31.9333 35.8007 32.6366C35.1286 34.3792 33.7456 35.7622 32.003 36.4343C31.2997 36.7078 30.2372 37.0359 28.2913 37.1217C26.1815 37.2157 25.5488 37.2389 20.2117 37.2389C14.8747 37.2389 14.234 37.2157 12.1318 37.1217C10.1783 37.0359 9.12343 36.7078 8.42017 36.4343C7.553 36.1138 6.76366 35.6059 6.12297 34.9417C5.45878 34.2931 4.95086 33.5117 4.63037 32.6445C4.35688 31.9413 4.02875 30.8784 3.94298 28.9329C3.84896 26.8231 3.82577 26.19 3.82577 20.853C3.82577 15.5159 3.84896 14.8752 3.94298 12.7734C4.02875 10.8199 4.35688 9.76499 4.63037 9.06173C4.95086 8.19425 5.45878 7.40521 6.1309 6.76422C6.77922 6.10003 7.56063 5.59212 8.42811 5.27192C9.13137 4.99843 10.1942 4.6703 12.1398 4.58423C14.2496 4.49052 14.8826 4.46702 20.2194 4.46702C25.5643 4.46702 26.1971 4.49052 28.2992 4.58423C30.2527 4.6703 31.3076 4.99843 32.0109 5.27192C32.8781 5.59212 33.6674 6.10003 34.3081 6.76422C34.9723 7.41284 35.4802 8.19425 35.8007 9.06173C36.0742 9.76499 36.4023 10.8275 36.4884 12.7734C36.5821 14.8832 36.6056 15.5159 36.6056 20.853C36.6056 26.19 36.5821 26.8151 36.4884 28.9249Z"
+                  fill="white"
+                />
+                <path
+                  d="M20.2038 10.562C14.531 10.562 9.92834 15.1644 9.92834 20.8375C9.92834 26.5106 14.531 31.1129 20.2038 31.1129C25.8769 31.1129 30.4792 26.5106 30.4792 20.8375C30.4792 15.1644 25.8769 10.562 20.2038 10.562ZM20.2038 27.5029C16.5236 27.5029 13.5384 24.518 13.5384 20.8375C13.5384 17.1569 16.5236 14.172 20.2038 14.172C23.8843 14.172 26.8692 17.1569 26.8692 20.8375C26.8692 24.518 23.8843 27.5029 20.2038 27.5029Z"
+                  fill="white"
+                />
+                <path
+                  d="M33.2846 10.1557C33.2846 11.4804 32.2105 12.5545 30.8855 12.5545C29.5608 12.5545 28.4866 11.4804 28.4866 10.1557C28.4866 8.83065 29.5608 7.75684 30.8855 7.75684C32.2105 7.75684 33.2846 8.83065 33.2846 10.1557Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_65_551">
+                  <rect
+                    width="40"
+                    height="40"
+                    fill="white"
+                    transform="translate(0.129608 0.833496)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </p>
+          <p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="41"
+              height="41"
+              viewBox="0 0 41 41"
+              fill="none"
+            >
+              <g clip-path="url(#clip0_65_555)">
+                <path
+                  d="M27.6279 0.833496C25.4954 0.980995 23.0029 2.34599 21.5504 4.12348C20.2254 5.73597 19.1354 8.13095 19.5604 10.4584C21.8904 10.5309 24.2979 9.13345 25.6929 7.32596C26.9979 5.64347 27.9854 3.26348 27.6279 0.833496Z"
+                  fill="white"
+                />
+                <path
+                  d="M36.0553 14.2535C34.0078 11.686 31.1304 10.196 28.4129 10.196C24.8254 10.196 23.3079 11.9135 20.8154 11.9135C18.2454 11.9135 16.2929 10.201 13.1905 10.201C10.143 10.201 6.898 12.0635 4.84052 15.2485C1.94803 19.7335 2.44303 28.1659 7.1305 35.3484C8.80799 37.9184 11.048 40.8084 13.978 40.8334C16.5854 40.8584 17.3204 39.1609 20.8529 39.1434C24.3854 39.1234 25.0554 40.8559 27.6579 40.8284C30.5904 40.8059 32.9529 37.6034 34.6303 35.0334C35.8328 33.1909 36.2803 32.2634 37.2128 30.1834C30.4304 27.6009 29.3429 17.956 36.0553 14.2535Z"
+                  fill="white"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_65_555">
+                  <rect
+                    width="40"
+                    height="40"
+                    fill="white"
+                    transform="translate(0.129608 0.833496)"
+                  />
+                </clipPath>
+              </defs>
+            </svg>
+          </p>
+        </div>
+        <div class="about-footer">
+          <p>Terms and Conditions</p>
+          <p>Privacy Policy</p>
+          <p>Cookie Policy</p>
+          <p>Privacy Settings</p>
+        </div>
+        <div class="copyright">
+          <p>Play Games @ Gamer @ 2000-2023 Gamer Bangladesh</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
